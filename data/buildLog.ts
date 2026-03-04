@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "Resume download file updated and degree wording refined",
+      de: "Lebenslauf-Datei aktualisiert und Studienstatus präzisiert"
+    },
+    summary: {
+      en: "Updated hero wording from 'Incoming MSc' to 'MS in progress' and connected the latest resume PDF to the portfolio download actions.",
+      de: "Die Hero-Formulierung von 'Incoming MSc' auf 'MS in progress' angepasst und den aktuellen Lebenslauf als Download-Datei eingebunden."
+    },
+    tags: ["Content", "CV", "Hero", "EN/DE"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "About section expanded for academic and hiring readability",
       de: "Über-mich-Bereich für akademische und berufliche Lesbarkeit erweitert"
     },

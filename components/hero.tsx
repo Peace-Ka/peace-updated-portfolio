@@ -41,7 +41,7 @@ export function Hero() {
             {t("contact")}
           </Link>
           <a
-            href="/Peace-Kalamya-Tabulated-CV2.pdf"
+            href="/Peace_Kalamya_Resume_Updated.pdf"
             download
             className="rounded-full border border-accent/60 bg-accent2 px-6 py-3 text-sm font-semibold text-primary transition hover:border-primary/40 hover:bg-accent/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
           >

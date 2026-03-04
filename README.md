@@ -120,7 +120,7 @@ proxy.ts
 
 Put the PDF file here:
 
-- `public/Peace-Kalamya-Tabulated-CV2.pdf`
+- `public/Peace_Kalamya_Resume_Updated.pdf`
 
 The navbar and hero buttons already point to this path.
 

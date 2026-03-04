@@ -1,6 +1,6 @@
 Place the resume PDF here with the exact filename:
 
-Peace-Kalamya-Tabulated-CV2.pdf
+Peace_Kalamya_Resume_Updated.pdf
 
 The navbar and hero "Download CV" buttons link to:
-/Peace-Kalamya-Tabulated-CV2.pdf
+/Peace_Kalamya_Resume_Updated.pdf

@@ -41,7 +41,7 @@ export function NavBar() {
             </Link>
           ))}
           <a
-            href="/Peace-Kalamya-Tabulated-CV2.pdf"
+            href="/Peace_Kalamya_Resume_Updated.pdf"
             download
             className="rounded-full border border-accent/60 bg-accent2 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-primary transition hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
           >
@@ -77,7 +77,7 @@ export function NavBar() {
               </Link>
             ))}
             <a
-              href="/Peace-Kalamya-Tabulated-CV2.pdf"
+              href="/Peace_Kalamya_Resume_Updated.pdf"
               download
               className="rounded-lg bg-accent2 px-3 py-2 text-sm font-semibold text-primary"
             >
