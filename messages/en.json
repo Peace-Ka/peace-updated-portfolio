@@ -1,0 +1,90 @@
+{
+  "site": {
+    "name": "Peace"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "buildLog": "Build log",
+    "contact": "Contact",
+    "downloadCv": "Download CV",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageToggle": "Switch language"
+  },
+  "hero": {
+    "subtitle": "Incoming MSc CS at the University of Freiburg",
+    "viewProjects": "View Projects",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+  "about": {
+    "heading": "About",
+    "intro": "Curiosity first. Systems second. Impact always."
+  },
+  "now": {
+    "heading": "Now",
+    "title": "What I'm focused on right now"
+  },
+  "projects": {
+    "heading": "Projects",
+    "intro": "A few things I've built while exploring web, ML, and systems ideas.",
+    "featured": "Featured",
+    "client": "Client",
+    "problem": "Problem",
+    "solution": "Solution",
+    "highlight": "Highlight",
+    "outcome": "Outcome",
+    "moreDetails": "More details",
+    "lessDetails": "Less",
+    "filterAll": "All",
+    "filterWeb": "Web",
+    "filterMl": "ML",
+    "filterSystems": "Systems",
+    "filterOther": "Other",
+    "empty": "No projects in this category yet."
+  },
+  "BuildLog": {
+    "title": "Build log",
+    "subtitle": "Small updates, shipped in public.",
+    "showMore": "Show more",
+    "showLess": "Show less"
+  },
+  "experience": {
+    "heading": "Experience",
+    "intro": "Core roles first, with extra details only when you want them.",
+    "showAll": "Show all experience",
+    "showLess": "Show less",
+    "moreDetails": "More details",
+    "lessDetails": "Hide details"
+  },
+  "leadership": {
+    "heading": "Leadership & Activities",
+    "intro": "A few places where I helped teams run smoothly."
+  },
+  "skills": {
+    "heading": "Skills",
+    "intro": "Compact, practical, and easy to scan.",
+    "cs": "Languages / CS",
+    "tools": "Tools",
+    "os": "Operating Systems",
+    "microsoft": "Microsoft",
+    "spoken": "Languages Spoken",
+    "interpersonal": "Interpersonal"
+  },
+  "contact": {
+    "heading": "Contact",
+    "line": "If you'd like to collaborate or connect, I'd be glad to hear from you.",
+    "email": "Email",
+    "location": "Location",
+    "showPhone": "Show phone",
+    "hidePhone": "Hide phone",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "signoff": "Thanks for visiting."
+  },
+  "footer": {
+    "easterEgg": "Built with love and a suspicious amount of coffee."
+  }
+}

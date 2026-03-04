@@ -1,0 +1,90 @@
+{
+  "site": {
+    "name": "Peace"
+  },
+  "nav": {
+    "home": "Start",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "buildLog": "Build-Log",
+    "contact": "Kontakt",
+    "downloadCv": "Lebenslauf herunterladen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "languageToggle": "Sprache wechseln"
+  },
+  "hero": {
+    "subtitle": "Angehende MSc-Studentin Informatik an der Universität Freiburg",
+    "viewProjects": "Projekte ansehen",
+    "contact": "Kontakt",
+    "downloadCv": "Lebenslauf herunterladen"
+  },
+  "about": {
+    "heading": "Über mich",
+    "intro": "Neugier zuerst. Systeme als Werkzeug. Wirkung als Ziel."
+  },
+  "now": {
+    "heading": "Aktuell",
+    "title": "Woran ich gerade arbeite"
+  },
+  "projects": {
+    "heading": "Projekte",
+    "intro": "Einige Projekte aus meinen Erkundungen in Web, ML und Systemen.",
+    "featured": "Hervorgehoben",
+    "client": "Auftraggeber",
+    "problem": "Problem",
+    "solution": "Lösung",
+    "highlight": "Highlight",
+    "outcome": "Ergebnis",
+    "moreDetails": "Mehr Details",
+    "lessDetails": "Weniger",
+    "filterAll": "Alle",
+    "filterWeb": "Web",
+    "filterMl": "ML",
+    "filterSystems": "Systeme",
+    "filterOther": "Sonstiges",
+    "empty": "Noch keine Projekte in dieser Kategorie."
+  },
+  "BuildLog": {
+    "title": "Build-Log",
+    "subtitle": "Kleine Updates, öffentlich shipped.",
+    "showMore": "Mehr anzeigen",
+    "showLess": "Weniger anzeigen"
+  },
+  "experience": {
+    "heading": "Erfahrung",
+    "intro": "Die wichtigsten Stationen zuerst, Details nur bei Bedarf.",
+    "showAll": "Mehr Erfahrung anzeigen",
+    "showLess": "Weniger anzeigen",
+    "moreDetails": "Mehr Details",
+    "lessDetails": "Details ausblenden"
+  },
+  "leadership": {
+    "heading": "Engagement",
+    "intro": "Stationen, in denen ich Teams und Abläufe unterstützt habe."
+  },
+  "skills": {
+    "heading": "Fähigkeiten",
+    "intro": "Kompakt, praxisnah und leicht zu scannen.",
+    "cs": "Sprachen / Informatik",
+    "tools": "Tools",
+    "os": "Betriebssysteme",
+    "microsoft": "Microsoft",
+    "spoken": "Gesprochene Sprachen",
+    "interpersonal": "Soziale Kompetenzen"
+  },
+  "contact": {
+    "heading": "Kontakt",
+    "line": "Wenn du zusammenarbeiten oder dich austauschen möchtest, freue ich mich über deine Nachricht.",
+    "email": "E-Mail",
+    "location": "Ort",
+    "showPhone": "Telefon anzeigen",
+    "hidePhone": "Telefon ausblenden",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "signoff": "Danke fürs Vorbeischauen."
+  },
+  "footer": {
+    "easterEgg": "Mit Liebe gebaut und einer verdächtigen Menge Kaffee."
+  }
+}

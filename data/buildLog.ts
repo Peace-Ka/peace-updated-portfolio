@@ -1,0 +1,103 @@
+export type BuildLogEntry = {
+  dateISO: string;
+  title: {
+    en: string;
+    de: string;
+  };
+  summary: {
+    en: string;
+    de: string;
+  };
+  tags?: string[];
+  links?: {
+    label: {
+      en: string;
+      de: string;
+    };
+    href: string;
+  }[];
+};
+
+export const buildLogEntries: BuildLogEntry[] = [
+  {
+    dateISO: "2026-03-04",
+    title: {
+      en: "Capstone project entry added to Projects",
+      de: "Capstone-Projekteintrag in Projekte ergänzt"
+    },
+    summary: {
+      en: "Added the Norman Police Department call-urgency triage capstone as a scannable EN/DE project card, with full stack tags and expandable extra details.",
+      de: "Das Capstone-Projekt zur Anruf-Priorisierung für das Norman Police Department als zweisprachige, gut scannbare Projektkarte ergänzt, inklusive Stack-Tags und ausklappbarer Details."
+    },
+    tags: ["Projects", "Capstone", "EN/DE"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
+      en: "Featured NCDC project added to Projects",
+      de: "Featured-NCDC-Projekt in Projekte ergänzt"
+    },
+    summary: {
+      en: "Added and surfaced the NCDC Uganda chatbot work as the featured project, with bilingual summary, scoped highlights, tool tags, and progressive disclosure for extra technical details.",
+      de: "Die NCDC-Uganda-Chatbot-Arbeit als Featured-Projekt ergänzt, inklusive zweisprachiger Kurzbeschreibung, präziser Highlights, Tool-Tags und ausklappbarer Detailtiefe."
+    },
+    tags: ["Projects", "NCDC", "Featured", "EN/DE"]
+  },
+  {
+    dateISO: "2026-03-02",
+    title: {
+      en: "Brown and baby-pink theme pass",
+      de: "Theme-Update in Braun und Babyrosa"
+    },
+    summary: {
+      en: "Updated global color tokens and section surfaces to a softer brown plus baby-pink palette. Improved visual consistency across cards, chips, and buttons.",
+      de: "Globale Farbtokens und Flächen auf eine weichere Braun- und Babyrosa-Palette umgestellt. Karten, Chips und Buttons wirken jetzt stimmiger."
+    },
+    tags: ["Design", "Tailwind", "Theme"]
+  },
+  {
+    dateISO: "2026-03-01",
+    title: {
+      en: "Bilingual routing and language toggle",
+      de: "Zweisprachiges Routing und Sprachumschalter"
+    },
+    summary: {
+      en: "Finalized `next-intl` locale routes for `/en` and `/de`, added root redirect behavior, and connected a language toggle that preserves the current path.",
+      de: "`next-intl`-Routen für `/en` und `/de` finalisiert, Root-Redirect ergänzt und einen Sprachumschalter mit Pfaderhalt eingebunden."
+    },
+    tags: ["i18n", "next-intl"],
+    links: [
+      {
+        label: {
+          en: "Locale setup",
+          de: "Locale-Setup"
+        },
+        href: "/en"
+      }
+    ]
+  },
+  {
+    dateISO: "2026-02-28",
+    title: {
+      en: "CV-backed homepage content refresh",
+      de: "Homepage-Inhalte aus dem CV aktualisiert"
+    },
+    summary: {
+      en: "Replaced placeholder copy with CV-based education, experience, leadership, skills, and contact details. Added progressive disclosure to keep sections compact.",
+      de: "Platzhaltertexte durch CV-basierte Inhalte zu Ausbildung, Erfahrung, Engagement, Skills und Kontakt ersetzt. Für kompakte Darstellung wurden Ausklapp-Elemente ergänzt."
+    },
+    tags: ["Content", "UX"]
+  },
+  {
+    dateISO: "2026-02-27",
+    title: {
+      en: "Download CV actions added",
+      de: "Lebenslauf-Download ergänzt"
+    },
+    summary: {
+      en: "Added Download CV actions in the navbar and hero so visitors can quickly access the PDF from both locales.",
+      de: "Download-Aktionen für den Lebenslauf in Navbar und Hero ergänzt, damit Besucher den PDF-Lebenslauf in beiden Sprachen schnell finden."
+    },
+    tags: ["Navigation", "Content"]
+  }
+];
