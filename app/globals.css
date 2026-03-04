@@ -4,21 +4,21 @@
 
 :root {
   color-scheme: light;
-  --bg: #fff7f7;
+  --bg: #f5f8fc;
   --surface: #ffffff;
-  --text: #2b1b14;
-  --muted: #6b5146;
-  --primary: #4a2c23;
-  --accent: #f4b6c2;
-  --accent2: #fce1e8;
-  --border: rgba(74, 44, 35, 0.12);
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #1e3a5f;
+  --accent: #0f766e;
+  --accent2: #e6f4f7;
+  --border: rgba(30, 58, 95, 0.14);
 }
 
 body {
   min-height: 100vh;
   color: var(--text);
   background:
-    radial-gradient(circle at 10% 8%, rgba(244, 182, 194, 0.35), transparent 42%),
-    radial-gradient(circle at 90% 12%, rgba(252, 225, 232, 0.7), transparent 45%),
-    linear-gradient(180deg, #fff9fa 0%, var(--bg) 100%);
+    radial-gradient(circle at 10% 8%, rgba(15, 118, 110, 0.12), transparent 42%),
+    radial-gradient(circle at 90% 12%, rgba(30, 58, 95, 0.1), transparent 45%),
+    linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
 }

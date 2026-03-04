@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "Theme refined for professional readability",
+      de: "Theme für professionelle Lesbarkeit überarbeitet"
+    },
+    summary: {
+      en: "Shifted the portfolio from pink/brown styling to a cleaner navy/slate palette with restrained teal accents for a more employer-friendly presentation.",
+      de: "Das Portfolio von Pink/Braun auf eine sachlichere Navy/Slate-Palette mit dezenten Teal-Akzenten umgestellt, für einen arbeitgeberfreundlicheren Auftritt."
+    },
+    tags: ["Design", "Theme", "UI polish"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "Portfolio project repositioned as web-development work",
       de: "Portfolio-Projekt als Web-Development-Arbeit neu positioniert"
     },
