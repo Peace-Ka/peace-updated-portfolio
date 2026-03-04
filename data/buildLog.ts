@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "Math minor added to academic profile",
+      de: "Nebenfach Mathematik im Profil ergänzt"
+    },
+    summary: {
+      en: "Updated hero, About copy, and skills chips to include the Mathematics minor for clearer academic positioning.",
+      de: "Hero, Über-mich-Text und Skill-Chips um das Nebenfach Mathematik ergänzt, für eine klarere akademische Positionierung."
+    },
+    tags: ["About", "Skills", "Academic profile"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "Hero microcopy refined",
       de: "Hero-Microcopy angepasst"
     },

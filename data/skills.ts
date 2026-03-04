@@ -6,7 +6,7 @@ export type SkillCategory = {
 export const skillCategories: SkillCategory[] = [
   {
     key: "cs",
-    items: ["C++", "Python", "Java", "Data Structures", "OOP"]
+    items: ["C++", "Python", "Java", "Data Structures", "OOP", "Mathematics Minor"]
   },
   {
     key: "tools",

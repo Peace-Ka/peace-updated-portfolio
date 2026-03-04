@@ -24,8 +24,8 @@ type ProfileData = {
 export const profile: ProfileData = {
   name: "Peace Kalamya",
   heroMeta: {
-    en: "B.S. Computer Science (University of Oklahoma, 2025) - UWC RBC alum (Freiburg)",
-    de: "B.Sc. Informatik (University of Oklahoma, 2025) - UWC-RBC-Alumna (Freiburg)"
+    en: "B.S. Computer Science + Mathematics Minor (University of Oklahoma, 2025) - UWC RBC alum (Freiburg)",
+    de: "B.Sc. Informatik + Nebenfach Mathematik (University of Oklahoma, 2025) - UWC-RBC-Alumna (Freiburg)"
   },
   heroMicroline: {
     en: "Nice to meet you - I like clarity, community, and code that lasts.",
@@ -41,8 +41,8 @@ export const profile: ProfileData = {
       de: "Ich bin Peace (25), in Uganda geboren und aufgewachsen. Mit 16 hat mich ein Stipendium ans UWC Robert Bosch College nach Freiburg gebracht - mein Einstieg in Lernen und Zusammenarbeit über Kulturen hinweg."
     },
     {
-      en: "That experience shaped how I work: I'm comfortable in diverse teams, I communicate clearly, and I like turning messy real-world needs into structured systems. I later earned my B.S. in Computer Science at the University of Oklahoma, and I'm now pursuing an M.S. in Computer Science at the University of Freiburg.",
-      de: "Diese Zeit prägt meine Arbeitsweise bis heute: Ich arbeite gerne in diversen Teams, kommuniziere klar und übersetze reale Anforderungen in strukturierte Systeme. Nach meinem B.Sc. in Informatik an der University of Oklahoma studiere ich jetzt M.Sc. Informatik an der Universität Freiburg."
+      en: "That experience shaped how I work: I'm comfortable in diverse teams, I communicate clearly, and I like turning messy real-world needs into structured systems. I later earned my B.S. in Computer Science with a Mathematics minor at the University of Oklahoma, and I'm now pursuing an M.S. in Computer Science at the University of Freiburg.",
+      de: "Diese Zeit prägt meine Arbeitsweise bis heute: Ich arbeite gerne in diversen Teams, kommuniziere klar und übersetze reale Anforderungen in strukturierte Systeme. Nach meinem B.Sc. in Informatik mit Nebenfach Mathematik an der University of Oklahoma studiere ich jetzt M.Sc. Informatik an der Universität Freiburg."
     }
   ],
   aboutStrengths: [
