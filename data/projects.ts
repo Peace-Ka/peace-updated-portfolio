@@ -74,6 +74,7 @@ export const projects: Project[] = [
       "Single script-tag widget",
       "Moodle-friendly"
     ],
+    demoUrl: "https://ele.ncdc.go.ug/",
     problem: {
       en: "Education users needed fast answers grounded in official institutional documents.",
       de: "Für Nutzer im Bildungsbereich wurden schnelle Antworten benötigt, die auf offiziellen Dokumenten basieren."
@@ -176,6 +177,8 @@ export const projects: Project[] = [
       de: "Zeigt meinen Website-Engineering-Ansatz: klare Struktur, wartbare Content-Workflows und praxisnahe Produktkommunikation."
     },
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Framer Motion", "Vercel-ready"],
+    githubUrl: "https://github.com/Peace-Ka/peace-updated-portfolio",
+    demoUrl: "https://peace-updated-portfolio.vercel.app/en",
     problem: {
       en: "Needed a professional public website that communicates technical projects clearly without overwhelming the reader.",
       de: "Benötigt wurde eine professionelle Website, die technische Projekte klar kommuniziert, ohne Leser zu überfordern."

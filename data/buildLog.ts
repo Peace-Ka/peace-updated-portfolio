@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "Project live URLs and NCDC date range updated",
+      de: "Projekt-URLs und NCDC-Zeitraum aktualisiert"
+    },
+    summary: {
+      en: "Added live links for the portfolio and NCDC chatbot project cards, and updated the NCDC internship period in Experience.",
+      de: "Live-Links für Portfolio und NCDC-Chatbot in den Projektkarten ergänzt und den NCDC-Zeitraum im Erfahrungsbereich aktualisiert."
+    },
+    tags: ["Projects", "Experience", "Links", "EN/DE"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "NCDC software development internship added to Experience",
       de: "NCDC-Softwareentwicklungspraktikum in Erfahrung ergänzt"
     },

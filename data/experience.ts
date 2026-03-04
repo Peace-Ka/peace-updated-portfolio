@@ -17,8 +17,8 @@ export const experiences: ExperienceItem[] = [
       de: "Softwareentwicklungs-Praktikantin"
     },
     period: {
-      en: "Dates as listed on resume",
-      de: "Zeitraum laut Lebenslauf"
+      en: "February 2026 - March 2026",
+      de: "Februar 2026 - März 2026"
     },
     summaryBullets: [
       {
