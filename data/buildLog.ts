@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "NCDC software development internship added to Experience",
+      de: "NCDC-Softwareentwicklungspraktikum in Erfahrung ergänzt"
+    },
+    summary: {
+      en: "Added the National Curriculum Development Centre internship as a primary experience entry, highlighting chatbot features now used on NCDC websites.",
+      de: "Das Praktikum beim National Curriculum Development Centre als zentrale Erfahrung ergänzt und die aktuell auf NCDC-Webseiten genutzten Chatbot-Funktionen hervorgehoben."
+    },
+    tags: ["Experience", "NCDC", "Chatbots", "EN/DE"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "Build log de-emphasized on homepage",
       de: "Build-Log auf der Startseite zurückgenommen"
     },

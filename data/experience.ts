@@ -9,6 +9,39 @@ export type ExperienceItem = {
 export const experiences: ExperienceItem[] = [
   {
     company: {
+      en: "National Curriculum Development Centre (NCDC), Uganda",
+      de: "National Curriculum Development Centre (NCDC), Uganda"
+    },
+    role: {
+      en: "Software Development Intern",
+      de: "Softwareentwicklungs-Praktikantin"
+    },
+    period: {
+      en: "Dates as listed on resume",
+      de: "Zeitraum laut Lebenslauf"
+    },
+    summaryBullets: [
+      {
+        en: "Developed chatbot features currently used on NCDC websites.",
+        de: "Chatbot-Funktionen entwickelt, die aktuell auf NCDC-Webseiten eingesetzt werden."
+      },
+      {
+        en: "Implemented document-grounded chatbot behavior for education-focused content and user queries.",
+        de: "Dokumentenbasierte Chatbot-Logik für bildungsbezogene Inhalte und Nutzeranfragen umgesetzt."
+      },
+      {
+        en: "Supported integration and deployment workflows to keep chatbot updates reliable in production.",
+        de: "Integrations- und Deployment-Workflows unterstützt, um Chatbot-Updates in Produktion zuverlässig auszurollen."
+      },
+      {
+        en: "Worked with stakeholders to align features with practical website and platform needs.",
+        de: "Mit Stakeholdern zusammengearbeitet, um Funktionen an praktische Anforderungen von Website und Plattform anzupassen."
+      }
+    ],
+    extraBullets: []
+  },
+  {
+    company: {
       en: "University of Oklahoma - Arts & Sciences Dean's Office",
       de: "University of Oklahoma - Arts & Sciences Dean's Office"
     },
