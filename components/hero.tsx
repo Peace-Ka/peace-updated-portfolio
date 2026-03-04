@@ -17,7 +17,7 @@ export function Hero() {
         transition={{ duration: 0.55, ease: "easeOut" }}
       >
         <p className="mb-4 inline-block rounded-full border border-accent/25 bg-white/65 px-4 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-          Freiburg-coded
+          Global perspective
         </p>
         <h1 className="text-5xl font-bold tracking-tight text-ink sm:text-7xl">{profile.name}</h1>
         <p className="mt-4 text-lg font-medium text-ink/85 sm:text-xl">{t("subtitle")}</p>

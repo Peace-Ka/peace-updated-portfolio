@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "Hero microcopy refined",
+      de: "Hero-Microcopy angepasst"
+    },
+    summary: {
+      en: "Updated the hero badge text from location-specific phrasing to 'Global perspective' for a broader and more professional framing.",
+      de: "Den Hero-Badge-Text von standortbezogener Formulierung auf 'Global perspective' geändert, für eine breitere und professionellere Positionierung."
+    },
+    tags: ["Copy", "Hero", "Branding"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "Resume download file updated and degree wording refined",
       de: "Lebenslauf-Datei aktualisiert und Studienstatus präzisiert"
     },
