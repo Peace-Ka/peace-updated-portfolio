@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "About section expanded for academic and hiring readability",
+      de: "Über-mich-Bereich für akademische und berufliche Lesbarkeit erweitert"
+    },
+    summary: {
+      en: "Expanded About into two concise narrative paragraphs plus a compact 'What I bring' list, and linked the public GitHub profile in contact data.",
+      de: "Den Über-mich-Bereich auf zwei prägnante Absätze plus eine kompakte 'Was ich mitbringe'-Liste erweitert und das öffentliche GitHub-Profil in den Kontaktdaten ergänzt."
+    },
+    tags: ["About", "Content", "EN/DE", "GitHub"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "Theme refined for professional readability",
       de: "Theme für professionelle Lesbarkeit überarbeitet"
     },

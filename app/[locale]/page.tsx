@@ -47,6 +47,17 @@ export default async function HomePage({ params }: Props) {
                     <p key={paragraph.en}>{paragraph[typedLocale]}</p>
                   ))}
                 </div>
+                <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.16em] text-accent">
+                  {tAbout("whatIBring")}
+                </h3>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-ink/80 sm:text-base">
+                  {profile.aboutStrengths.map((item) => (
+                    <li key={item.en}>- {item[typedLocale]}</li>
+                  ))}
+                </ul>
+                <p className="mt-4 text-sm leading-relaxed text-ink/80 sm:text-base">
+                  {profile.aboutClosing[typedLocale]}
+                </p>
               </div>
               <NowPanel />
             </div>
