@@ -139,93 +139,54 @@ export const projects: Project[] = [
     }
   },
   {
-    slug: "campus-hub",
-    title: {
-      en: "Campus Hub Planner",
-      de: "Campus Hub Planer"
-    },
-    problem: {
-      en: "Student clubs had scattered events across spreadsheets and chats, causing missed deadlines and low participation.",
-      de: "Studentische Gruppen verwalteten Termine in Tabellen und Chats, wodurch Fristen oft verpasst wurden."
-    },
-    solution: {
-      en: "Built a multilingual event dashboard with reminders and role-based editing for organizers and members.",
-      de: "Ein mehrsprachiges Event-Dashboard mit Erinnerungen und rollenbasiertem Bearbeiten entwickelt."
-    },
-    highlight: {
-      en: "Streamlined collaboration across teams in pilot use.",
-      de: "Zusammenarbeit im Pilotbetrieb deutlich vereinfacht."
-    },
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
+    slug: "portfolio-web-experience",
     category: "web",
-    githubUrl: "https://github.com/peace/campus-hub",
-    demoUrl: "https://campus-hub-demo.vercel.app"
-  },
-  {
-    slug: "flood-forecast-lite",
-    title: {
-      en: "Flood Forecast Lite",
-      de: "Flood Forecast Lite"
+    client: {
+      en: "Personal + professional showcase",
+      de: "Persönliche + professionelle Präsentation"
     },
+    title: {
+      en: "Web Portfolio Platform - One of my website builds",
+      de: "Web-Portfolio-Plattform - eines meiner Website-Projekte"
+    },
+    summary: {
+      en: "Built this bilingual portfolio as part of a broader website-building practice, with structured content, localization, and clean production deployment.",
+      de: "Dieses zweisprachige Portfolio als Teil einer breiteren Website-Praxis aufgebaut - mit strukturierter Inhaltspflege, Lokalisierung und sauberem Production-Deployment."
+    },
+    bullets: [
+      {
+        en: "Designed and implemented a modular Next.js App Router architecture with reusable sections and data-driven project rendering.",
+        de: "Eine modulare Next.js-App-Router-Architektur mit wiederverwendbaren Sektionen und datengetriebenem Projektrendering entworfen und umgesetzt."
+      },
+      {
+        en: "Implemented end-to-end bilingual UX (EN/DE) using next-intl with locale routing, translated UI labels, and locale-aware formatting.",
+        de: "Eine durchgängige zweisprachige UX (EN/DE) mit next-intl umgesetzt, inklusive Locale-Routing, übersetzten UI-Labels und lokalisierter Darstellung."
+      },
+      {
+        en: "Added progressive disclosure patterns (Build Log, expandable project details, compact cards) to keep content scannable for academic and hiring audiences.",
+        de: "Progressive-Disclosure-Muster (Build-Log, ausklappbare Projektdetails, kompakte Karten) ergänzt, damit Inhalte für akademische und berufliche Zielgruppen gut scannbar bleiben."
+      },
+      {
+        en: "Prepared repository, documentation, and deployment flow for maintainable iteration and public visibility.",
+        de: "Repository, Dokumentation und Deployment-Flow für wartbare Weiterentwicklung und öffentliche Sichtbarkeit vorbereitet."
+      }
+    ],
+    outcome: {
+      en: "Represents my website engineering approach: clear structure, maintainable content workflows, and practical product communication.",
+      de: "Zeigt meinen Website-Engineering-Ansatz: klare Struktur, wartbare Content-Workflows und praxisnahe Produktkommunikation."
+    },
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Framer Motion", "Vercel-ready"],
     problem: {
-      en: "Local teams needed faster flood risk insights from weather and terrain data without heavy tooling.",
-      de: "Lokale Teams brauchten schnellere Hochwasser-Einschätzungen aus Wetter- und Geländedaten ohne schwere Toolchains."
+      en: "Needed a professional public website that communicates technical projects clearly without overwhelming the reader.",
+      de: "Benötigt wurde eine professionelle Website, die technische Projekte klar kommuniziert, ohne Leser zu überfordern."
     },
     solution: {
-      en: "Trained a lightweight gradient-boosting pipeline and exposed predictions through a map-first interface.",
-      de: "Eine schlanke Gradient-Boosting-Pipeline trainiert und Vorhersagen in einer kartenbasierten Oberfläche bereitgestellt."
+      en: "Built a bilingual portfolio system with focused sections, progressive disclosure, and reusable data models.",
+      de: "Ein zweisprachiges Portfolio-System mit fokussierten Sektionen, Progressive Disclosure und wiederverwendbaren Datenmodellen umgesetzt."
     },
     highlight: {
-      en: "Balanced model quality with fast inference.",
-      de: "Modellqualität und schnelle Inferenz ausgewogen umgesetzt."
-    },
-    tags: ["Python", "XGBoost", "FastAPI", "Leaflet"],
-    category: "ml",
-    githubUrl: "https://github.com/peace/flood-forecast-lite"
-  },
-  {
-    slug: "study-sync",
-    title: {
-      en: "Study Sync",
-      de: "Study Sync"
-    },
-    problem: {
-      en: "Distributed student teams struggled to track tasks and learning goals across time zones.",
-      de: "Verteilte Studierendenteams hatten Schwierigkeiten, Aufgaben und Lernziele über Zeitzonen hinweg zu koordinieren."
-    },
-    solution: {
-      en: "Designed a sync-first workspace with shared milestones, async check-ins, and progress analytics.",
-      de: "Einen Sync-first-Workspace mit gemeinsamen Meilensteinen, asynchronen Check-ins und Fortschrittsanalysen entworfen."
-    },
-    highlight: {
-      en: "Improved visibility for weekly progress tracking.",
-      de: "Sichtbarkeit für den wöchentlichen Fortschritt verbessert."
-    },
-    tags: ["React", "Node.js", "Socket.io", "Tailwind CSS"],
-    category: "web",
-    githubUrl: "https://github.com/peace/study-sync",
-    demoUrl: "https://study-sync-showcase.vercel.app"
-  },
-  {
-    slug: "signal-sentinel",
-    title: {
-      en: "Signal Sentinel",
-      de: "Signal Sentinel"
-    },
-    problem: {
-      en: "Service logs grew quickly, but teams lacked a simple way to spot anomalous incidents early.",
-      de: "Service-Logs wuchsen schnell, doch es fehlte eine einfache Möglichkeit, Auffälligkeiten früh zu erkennen."
-    },
-    solution: {
-      en: "Implemented stream processing with rule-based anomaly detection and concise alert summaries.",
-      de: "Stream-Processing mit regelbasierter Anomalieerkennung und kompakten Alarmzusammenfassungen umgesetzt."
-    },
-    highlight: {
-      en: "Reduced manual overhead during incident triage.",
-      de: "Manuellen Aufwand bei der Incident-Triage reduziert."
-    },
-    tags: ["Go", "Kafka", "Docker", "Grafana"],
-    category: "systems",
-    githubUrl: "https://github.com/peace/signal-sentinel"
+      en: "Website-focused engineering showcased through a live, maintainable product.",
+      de: "Website-fokussiertes Engineering in einem livefähigen, wartbaren Produkt dargestellt."
+    }
   }
 ];

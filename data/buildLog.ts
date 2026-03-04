@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "Portfolio project repositioned as web-development work",
+      de: "Portfolio-Projekt als Web-Development-Arbeit neu positioniert"
+    },
+    summary: {
+      en: "Updated the Projects set to three focused entries and framed the portfolio itself as a website project within a broader web-building practice, with concise employer/professor-oriented wording.",
+      de: "Das Projektset auf drei fokussierte Einträge umgestellt und das Portfolio selbst als Website-Projekt innerhalb einer breiteren Web-Praxis eingeordnet - mit knapper, professoren- und arbeitgeberorientierter Formulierung."
+    },
+    tags: ["Projects", "Portfolio", "Positioning", "EN/DE"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "Capstone project entry added to Projects",
       de: "Capstone-Projekteintrag in Projekte ergänzt"
     },
