@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "Build log de-emphasized on homepage",
+      de: "Build-Log auf der Startseite zurückgenommen"
+    },
+    summary: {
+      en: "Moved Build Log below Contact, removed the top-nav link, and reduced the default view to two compact entries so projects and profile stay front and center.",
+      de: "Build-Log unter den Kontaktbereich verschoben, den Top-Navi-Link entfernt und die Standardansicht auf zwei kompakte Einträge reduziert, damit Profil und Projekte im Fokus bleiben."
+    },
+    tags: ["UX", "Homepage hierarchy", "Build log"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "Math minor added to academic profile",
       de: "Nebenfach Mathematik im Profil ergänzt"
     },

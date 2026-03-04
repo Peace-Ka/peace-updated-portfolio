@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { buildLogEntries } from "@/data/buildLog";
 
-const DEFAULT_VISIBLE = 3;
+const DEFAULT_VISIBLE = 2;
 
 export function BuildLog() {
   const t = useTranslations("BuildLog");
@@ -33,17 +33,17 @@ export function BuildLog() {
       <h2 className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">{t("title")}</h2>
       <p className="mt-2 text-sm text-ink/75 sm:text-base">{t("subtitle")}</p>
 
-      <div className="mt-6 space-y-4">
+      <div className="mt-5 space-y-3">
         {visibleEntries.map((entry) => (
           <article
             key={`${entry.dateISO}-${entry.title.en}`}
-            className="rounded-xl border border-ink/10 bg-mist p-4 transition hover:-translate-y-0.5 hover:shadow-soft"
+            className="rounded-xl border border-ink/10 bg-mist p-3.5 transition hover:-translate-y-0.5 hover:shadow-soft"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
               {formatDate(entry.dateISO)}
             </p>
-            <h3 className="mt-1 text-lg font-semibold text-ink">{entry.title[locale]}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-ink/80">{entry.summary[locale]}</p>
+            <h3 className="mt-1 text-base font-semibold text-ink">{entry.title[locale]}</h3>
+            <p className="mt-1.5 text-sm leading-relaxed text-ink/80">{entry.summary[locale]}</p>
 
             {entry.tags?.length ? (
               <div className="mt-3 flex flex-wrap gap-2">

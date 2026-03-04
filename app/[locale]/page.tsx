@@ -79,12 +79,6 @@ export default async function HomePage({ params }: Props) {
           </Reveal>
         </section>
 
-        <section id="build-log" className="mt-16 scroll-mt-24">
-          <Reveal>
-            <BuildLog />
-          </Reveal>
-        </section>
-
         <section id="experience" className="mt-16 scroll-mt-24">
           <Reveal>
             <SectionHeading title={tExperience("heading")} description={tExperience("intro")} />
@@ -110,6 +104,12 @@ export default async function HomePage({ params }: Props) {
           <Reveal>
             <SectionHeading title={tContact("heading")} description={tContact("line")} />
             <ContactSection />
+          </Reveal>
+        </section>
+
+        <section id="build-log" className="mt-16 scroll-mt-24">
+          <Reveal>
+            <BuildLog />
           </Reveal>
         </section>
       </main>
