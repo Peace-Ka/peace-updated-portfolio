@@ -1,27 +1,27 @@
-{
+﻿{
   "site": {
     "name": "Peace"
   },
   "nav": {
     "home": "Start",
-    "about": "Über mich",
+    "about": "Ãœber mich",
     "projects": "Projekte",
     "buildLog": "Build-Log",
     "assistant": "PA",
     "contact": "Kontakt",
     "downloadCv": "Lebenslauf herunterladen",
-    "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen",
+    "openMenu": "MenÃ¼ Ã¶ffnen",
+    "closeMenu": "MenÃ¼ schlieÃŸen",
     "languageToggle": "Sprache wechseln"
   },
   "hero": {
-    "subtitle": "M.Sc. Informatik in Bearbeitung an der Universität Freiburg",
+    "subtitle": "M.Sc. Informatik in Bearbeitung an der UniversitÃ¤t Freiburg",
     "viewProjects": "Projekte ansehen",
     "contact": "Kontakt",
     "downloadCv": "Lebenslauf herunterladen"
   },
   "about": {
-    "heading": "Über mich",
+    "heading": "Ãœber mich",
     "intro": "Neugier zuerst. Systeme als Werkzeug. Wirkung als Ziel.",
     "whatIBring": "Was ich mitbringe"
   },
@@ -35,7 +35,7 @@
     "featured": "Hervorgehoben",
     "client": "Auftraggeber",
     "problem": "Problem",
-    "solution": "Lösung",
+    "solution": "LÃ¶sung",
     "highlight": "Highlight",
     "outcome": "Ergebnis",
     "moreDetails": "Mehr Details",
@@ -49,19 +49,19 @@
   },
   "BuildLog": {
     "title": "Build-Log",
-    "subtitle": "Kleine Updates, öffentlich shipped.",
+    "subtitle": "Kleine Updates, Ã¶ffentlich shipped.",
     "showMore": "Mehr anzeigen",
     "showLess": "Weniger anzeigen"
   },
   "assistant": {
     "title": "Personal Assistant",
-    "subtitle": "Stelle mir lockere Fragen. Antworten basieren auf meiner persönlichen Wissensdatei.",
-    "fabAria": "Personal Assistant öffnen",
+    "subtitle": "Stelle mir lockere Fragen. Antworten basieren auf meiner persÃ¶nlichen Wissensdatei.",
+    "fabAria": "Personal Assistant Ã¶ffnen",
     "modeUnknown": "Modus: wartet",
     "modeOpenAI": "Modus: OpenAI",
     "modeFallback": "Modus: lokaler Fallback",
     "modeFallbackEmbedded": "Modus: eingebettetes Fallback-Wissen",
-    "empty": "Beispiel: Magst du lieber Sushi oder Birria Tacos?",
+    "empty": "Beispiel: Bevorzugt Peace Sushi oder Birria Tacos?",
     "you": "Du",
     "assistantName": "PA",
     "inputLabel": "Deine Frage",
@@ -69,7 +69,7 @@
     "send": "Senden",
     "sending": "Wird gesendet...",
     "error": "Es gab einen Fehler.",
-    "privacyNote": "Hinweis: Dieser Assistant basiert auf einer persönlichen Fun-Wissensbasis. Keine sensiblen privaten Daten teilen."
+    "privacyNote": "Hinweis: Dieser Assistant basiert auf einer persÃ¶nlichen Fun-Wissensbasis. Keine sensiblen privaten Daten teilen."
   },
   "experience": {
     "heading": "Erfahrung",
@@ -81,10 +81,10 @@
   },
   "leadership": {
     "heading": "Engagement",
-    "intro": "Stationen, in denen ich Teams und Abläufe unterstützt habe."
+    "intro": "Stationen, in denen ich Teams und AblÃ¤ufe unterstÃ¼tzt habe."
   },
   "skills": {
-    "heading": "Fähigkeiten",
+    "heading": "FÃ¤higkeiten",
     "intro": "Kompakt, praxisnah und leicht zu scannen.",
     "cs": "Sprachen / Informatik",
     "tools": "Tools",
@@ -95,16 +95,17 @@
   },
   "contact": {
     "heading": "Kontakt",
-    "line": "Wenn du zusammenarbeiten oder dich austauschen möchtest, freue ich mich über deine Nachricht.",
+    "line": "Wenn du zusammenarbeiten oder dich austauschen mÃ¶chtest, freue ich mich Ã¼ber deine Nachricht.",
     "email": "E-Mail",
     "location": "Ort",
     "showPhone": "Telefon anzeigen",
     "hidePhone": "Telefon ausblenden",
     "linkedin": "LinkedIn",
     "github": "GitHub",
-    "signoff": "Danke fürs Vorbeischauen."
+    "signoff": "Danke fÃ¼rs Vorbeischauen."
   },
   "footer": {
-    "easterEgg": "Mit Liebe gebaut und einer verdächtigen Menge Kaffee."
+    "easterEgg": "Mit Liebe gebaut und einer verdÃ¤chtigen Menge Kaffee."
   }
 }
+

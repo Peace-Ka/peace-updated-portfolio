@@ -1,4 +1,4 @@
-{
+﻿{
   "site": {
     "name": "Peace"
   },
@@ -61,7 +61,7 @@
     "modeOpenAI": "Mode: OpenAI",
     "modeFallback": "Mode: local fallback",
     "modeFallbackEmbedded": "Mode: embedded fallback knowledge",
-    "empty": "Try asking: Do you prefer sushi or birria tacos?",
+    "empty": "Try asking: Does Peace prefer sushi to birria tacos?",
     "you": "You",
     "assistantName": "PA",
     "inputLabel": "Your question",
@@ -108,3 +108,4 @@
     "easterEgg": "Built with love and a suspicious amount of coffee."
   }
 }
+
