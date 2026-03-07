@@ -1,0 +1,368 @@
+{
+  "profile_name": "Peace",
+  "generated_on": "2026-03-07",
+  "format": "question_answer_with_confidence_and_last_updated",
+  "entries": [
+    {
+      "question": "Write a 4-sentence bio of Peace in third person for a friend.",
+      "answer": "Peace is a 25-year-old Ugandan software developer currently pursuing a Master’s in Computer Science at the University of Freiburg. She’s passionate about building thoughtful tech products, especially AI systems that can be used ethically to improve the world. Friends know her as someone who values consistency, kindness, and meaningful time with the people she loves. Outside of coding, she enjoys mind-bending movies, good coffee or a mojito, and discovering music from artists like Olivia Dean.",
+      "confidence": "Certain",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "Write a 6-sentence bio of Peace for a professor.",
+      "answer": "Peace is a 25-year-old Ugandan computer scientist currently pursuing a Master of Science in Computer Science at the University of Freiburg in Germany. She previously completed her Bachelor of Science in Computer Science at the University of Oklahoma, where she also minored in Mathematics. Her academic and technical interests center on building practical systems with artificial intelligence, particularly exploring ways AI can be used responsibly and ethically. Peace enjoys turning ideas into working technical products and is currently developing personal AI tools as experimental projects. She is particularly drawn to thoughtful, well-structured systems and values consistency, curiosity, and intellectual rigor in her work. Through her studies and projects, she hopes to become a software developer who builds meaningful technology that positively impacts the world.",
+      "confidence": "Certain",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "List 10 facts that must always appear in a general intro about Peace.",
+      "answer": [
+        "Peace is a 25-year-old Ugandan computer scientist born on October 21, 2000.",
+        "She was raised in Uganda and maintains a strong connection to her home country while studying and working internationally.",
+        "At age 16, she received a scholarship to attend United World College Robert Bosch College (UWC RBC) in Freiburg, Germany, an experience that shaped her global outlook.",
+        "She completed a Bachelor of Science in Computer Science at the University of Oklahoma, where she also minored in Mathematics.",
+        "She is currently pursuing a Master of Science in Computer Science at the University of Freiburg in Germany.",
+        "Her academic and professional interests focus on artificial intelligence and building systems that can ethically improve the world.",
+        "She enjoys building experimental tech projects, including a personal AI assistant that can answer questions about her.",
+        "She values consistency, consideration, clarity, and kindness as non-negotiables (KCCC).",
+        "She enjoys turning ideas into technology products and experimenting with AI tools.",
+        "She enjoys mind-bending movies and thoughtful storytelling (especially Christopher Nolan)."
+      ],
+      "confidence": "Certain",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "List Peace’s music taste by category: classical, rap, mellow, current favorites.",
+      "answer": {
+        "classical": "Vivaldi’s Four Seasons, especially Max Richter’s recomposed Spring 1.",
+        "rap": "J. Cole’s style (e.g., 'Apparently').",
+        "mellow": "Not specified as a list here (see next question for examples).",
+        "current_favorites": "Mostly pop (Olivia Dean’s newer work) and 'Pretty Little Fears'."
+      },
+      "confidence": "Changes",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "For each music category, give 3 examples and why she likes them.",
+      "answer": {
+        "classical": [
+          {
+            "example": "Vivaldi — The Four Seasons (esp. Spring)",
+            "why": "Vivid, cinematic energy; feels like motion and sunlight."
+          },
+          {
+            "example": "Max Richter — “Spring 1” (Recomposed)",
+            "why": "Familiar but modern; emotional without being mushy; focused without being cold."
+          },
+          {
+            "example": "Max Richter — “On the Nature of Daylight”",
+            "why": "Slow, heavy beauty that quiets the mind."
+          }
+        ],
+        "rap": [
+          {
+            "example": "J. Cole — “Apparently”",
+            "why": "Introspective storytelling; honest and grounded."
+          },
+          {
+            "example": "6LACK ft. J. Cole — “Pretty Little Fears”",
+            "why": "Vulnerable, smooth, reflective but still a vibe."
+          },
+          {
+            "example": "Drake — “Chicago Freestyle”",
+            "why": "Moody, melodic, late-night introspection energy."
+          }
+        ],
+        "mellow": [
+          {
+            "example": "Olivia Dean — “So Easy to Fall in Love”",
+            "why": "Soft warmth and clarity; gentle but not boring."
+          },
+          {
+            "example": "Sade — “By Your Side”",
+            "why": "Calm loyalty energy; safe and grown."
+          },
+          {
+            "example": "Halle Bailey — “Angel”",
+            "why": "Bright, affirming, emotionally uplifting."
+          }
+        ],
+        "current_favorites": [
+          {
+            "example": "Olivia Dean — (songs from her newer album)",
+            "why": "Modern pop that’s still soulful and tasteful; clean vocals and real emotion."
+          },
+          {
+            "example": "6LACK ft. J. Cole — “Pretty Little Fears”",
+            "why": "Romantic but not corny; reflective and smooth."
+          },
+          {
+            "example": "Pop with strong songwriting",
+            "why": "Polished but sincere; emotion + craft."
+          }
+        ]
+      },
+      "confidence": "Changes",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "List favorite movies/series and what themes Peace enjoys.",
+      "answer": {
+        "themes": [
+          "Slice-of-life (comfort, warmth, everyday meaning)",
+          "Mind-bending films (twists, clever structure, big ideas)"
+        ],
+        "series_examples": [
+          "When Life Gives You Tangerines",
+          "Reply 1988"
+        ],
+        "movie_examples": [
+          "The Prestige",
+          "Inception",
+          "Oppenheimer"
+        ],
+        "notes": "She especially enjoys Christopher Nolan’s style."
+      },
+      "confidence": "Certain",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "Describe Peace’s communication style in teams.",
+      "answer": "Peace communicates clearly and directly, especially about goals, timelines, and what “done” means. She prefers structure: agendas, action items, owners, and follow-through—less vibes, more execution. She’s collaborative but not passive: she asks good questions, surfaces risks early, and pushes for decisions when a team is stuck. She tends to show care through reliability and acts of service (doing the work, unblocking others) and appreciates teammates who do what they say they’ll do.",
+      "confidence": "Changes",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "What values are non-negotiable for Peace? Give examples.",
+      "answer": {
+        "values": [
+          "Consistency",
+          "Consideration",
+          "Clarity",
+          "Kindness"
+        ],
+        "shorthand": "KCCC",
+        "examples": [
+          "Consistency: follows through on commitments and keeps routines/systems stable.",
+          "Consideration: thinks about how decisions affect others; shows care in actions.",
+          "Clarity: prefers direct communication and concrete expectations.",
+          "Kindness: aims to be warm and respectful even when setting boundaries."
+        ]
+      },
+      "confidence": "Certain",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "What are Peace’s strengths under pressure and in collaboration?",
+      "answer": {
+        "under_pressure": [
+          "Solution-minded",
+          "Follow-through",
+          "Clarity in language"
+        ],
+        "in_collaboration": [
+          "Listening skills",
+          "Curiosity",
+          "Patience",
+          "Structured execution (turns discussion into a plan with owners/next steps)"
+        ]
+      },
+      "confidence": "Certain",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "Create 30 this-or-that preferences for Peace (food, travel, routines, lifestyle) with confidence and last_updated.",
+      "answer": [
+        {
+          "this_or_that": "Coffee vs Tea",
+          "pick": "Coffee",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Mojito vs Margarita",
+          "pick": "Margarita",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Dirty martini vs Sweet cocktail",
+          "pick": "Dirty martini",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Birria vs Pizza",
+          "pick": "Birria",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Everything-mixed bowl vs Separate plated items",
+          "pick": "Everything-mixed bowl",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Spicy chili crisp vs Mild flavors",
+          "pick": "Spicy chili crisp",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Cooking at home vs Eating out",
+          "pick": "Equally both",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Sweet snacks vs Savory snacks",
+          "pick": "Savory",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Breakfast person vs Night eater",
+          "pick": "Breakfast person",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Early mornings vs Late nights",
+          "pick": "Early mornings",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Routine vs Spontaneity",
+          "pick": "Routine",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Plan ahead vs Wing it",
+          "pick": "Plan ahead",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Checklists vs 'I’ll remember'",
+          "pick": "Checklists",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Small circle vs Big social scene",
+          "pick": "Small circle",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Quality time vs Gifts",
+          "pick": "Quality time",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Acts of service vs Words of affirmation",
+          "pick": "Acts of service",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Direct feedback vs Hinting",
+          "pick": "Direct feedback",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Calm talks vs Heated debates",
+          "pick": "Calm talks",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Consistency vs Variety",
+          "pick": "Consistency",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Under-promise/over-deliver vs Big promises",
+          "pick": "Under-promise/over-deliver",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Mind-bending movies vs Rom-coms",
+          "pick": "Mind-bending movies",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Christopher Nolan vs Anything random",
+          "pick": "Christopher Nolan",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Slice-of-life series vs Action series",
+          "pick": "Slice-of-life",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "K-drama vs Reality dating shows",
+          "pick": "K-drama",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Music while working vs Silence",
+          "pick": "Music while working",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Classical focus music vs Lo-fi beats",
+          "pick": "Classical",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Rap for mood vs Pop for mood",
+          "pick": "Pop",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Build a product vs Write a long essay",
+          "pick": "Build a product",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Ethical AI discussions vs 'Just ship it'",
+          "pick": "Ethical AI",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "this_or_that": "Freiburg city walks vs Staying indoors",
+          "pick": "City walks",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        }
+      ],
+      "confidence": "Changes",
+      "last_updated": "2026-03-07"
+    },
+    {
+      "question": "Additional about info: family context.",
+      "answer": "Peace comes from a family of five: mom, dad, two brothers (one older, one younger), and Peace.",
+      "confidence": "Certain",
+      "last_updated": "2026-03-07"
+    }
+  ]
+}

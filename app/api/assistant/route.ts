@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+﻿import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { NextRequest, NextResponse } from "next/server";
 import { defaultPAKBItems, defaultPAPrompt } from "@/data/pa-default";
@@ -14,14 +14,27 @@ type Payload = {
 async function loadKnowledge() {
   try {
     const root = process.cwd();
-    const [promptRaw, kbRaw] = await Promise.all([
-      readFile(join(root, "peace_personality_prompt.txt"), "utf-8"),
-      readFile(join(root, "peace_personal_kb.json"), "utf-8")
-    ]);
+    const promptRaw = await readFile(join(root, "peace_personality_prompt.txt"), "utf-8");
+
+    const kbFiles = ["peace_personal_kb.json", "peace_codex_questions_1_to_10.json"];
+    const kbReads = await Promise.allSettled(kbFiles.map((file) => readFile(join(root, file), "utf-8")));
+
+    const kbRaws = kbReads
+      .filter((result): result is PromiseFulfilledResult<string> => result.status === "fulfilled")
+      .map((result) => result.value);
+
+    if (!kbRaws.length) {
+      throw new Error("No KB files available");
+    }
+
+    const combined = kbRaws.flatMap((raw) => flattenKB(raw));
+    const deduped = Array.from(
+      new Map(combined.map((item) => [`${item.question}::${item.answer}`, item])).values()
+    );
 
     return {
       promptRaw,
-      kbItems: flattenKB(kbRaw),
+      kbItems: deduped.length ? deduped : defaultPAKBItems,
       source: "files" as const
     };
   } catch {
