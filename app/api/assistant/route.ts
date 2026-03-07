@@ -16,7 +16,7 @@ async function loadKnowledge() {
     const root = process.cwd();
     const promptRaw = await readFile(join(root, "peace_personality_prompt.txt"), "utf-8");
 
-    const kbFiles = ["peace_personal_kb.json", "peace_codex_questions_1_to_10.json"];
+    const kbFiles = ["peace_personal_kb.json", "peace_profile_questions_1_to_10.json"];
     const kbReads = await Promise.allSettled(kbFiles.map((file) => readFile(join(root, file), "utf-8")));
 
     const kbRaws = kbReads
@@ -166,3 +166,4 @@ HARD GUARDRAILS
     );
   }
 }
+
