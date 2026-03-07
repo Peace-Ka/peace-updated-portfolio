@@ -6,9 +6,15 @@ import { buildKnowledgeSnippet, flattenKB, retrieveRelevant } from "@/lib/pa";
 
 export const runtime = "nodejs";
 
+type ChatTurn = {
+  role?: "user" | "assistant";
+  text?: string;
+};
+
 type Payload = {
   message?: string;
   locale?: string;
+  history?: ChatTurn[];
 };
 
 async function loadKnowledge() {
@@ -97,8 +103,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing message." }, { status: 400 });
     }
 
+    const safeHistory = (body.history ?? [])
+      .filter((turn) => (turn.role === "user" || turn.role === "assistant") && typeof turn.text === "string")
+      .map((turn) => ({ role: turn.role as "user" | "assistant", text: turn.text!.trim().slice(0, 1500) }))
+      .filter((turn) => turn.text.length > 0)
+      .slice(-12);
+
     const { promptRaw, kbItems, source } = await loadKnowledge();
-    const relevant = retrieveRelevant(kbItems, message, 6);
+    const relevant = retrieveRelevant(kbItems, message, 8);
     const context = buildKnowledgeSnippet(relevant);
     const apiKey = process.env.OPENAI_API_KEY;
 
@@ -113,15 +125,26 @@ export async function POST(request: NextRequest) {
 
 HARD GUARDRAILS
 - Answer only using the supplied knowledge context.
-- If context is insufficient, say you do not know and ask one short follow-up.
-- Keep answers concise.
+- Use conversation history for continuity. If user says "yes", "sure", "okay", or similar, treat it as a reply to your previous question and continue naturally.
+- Prefer direct helpful answers over meta statements.
+- Avoid phrases like "the information provided does not specify".
+- If exact detail is missing, give the best grounded summary from nearby facts and state uncertainty briefly.
+- Keep answers concise (2-5 sentences unless user asks for more).
 - Respond in ${locale === "de" ? "German" : "English"} unless user asks otherwise.
 - Treat the user as a visitor asking about Peace, not as Peace.
 - Use third-person perspective about Peace (for example: "Peace is..."), unless the user explicitly says they are Peace.
 - Do not use pet names like "luv" or "hun" in this public portfolio assistant.
-- Keep tone friendly and natural, but professional and clear.`;
+- Keep tone warm, natural, and clear (not robotic, not pedantic).
+
+KNOWLEDGE CONTEXT
+${context}`;
 
     const model = process.env.OPENAI_MODEL ?? "gpt-4.1-mini";
+
+    const historyInput = safeHistory.map((turn) => ({
+      role: turn.role,
+      content: [{ type: "input_text", text: turn.text }]
+    }));
 
     const response = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",
@@ -131,15 +154,16 @@ HARD GUARDRAILS
       },
       body: JSON.stringify({
         model,
-        temperature: 0.4,
+        temperature: 0.6,
         input: [
           { role: "system", content: [{ type: "input_text", text: systemPrompt }] },
+          ...historyInput,
           {
             role: "user",
             content: [
               {
                 type: "input_text",
-                text: `User question:\n${message}\n\nKnowledge context:\n${context}`
+                text: message
               }
             ]
           }
@@ -166,4 +190,3 @@ HARD GUARDRAILS
     );
   }
 }
-

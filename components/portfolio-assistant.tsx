@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { FormEvent, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
@@ -23,7 +23,10 @@ export function PortfolioAssistant() {
       return;
     }
 
-    setMessages((current) => [...current, { role: "user", text: value }]);
+    const historyWithUser = [...messages, { role: "user" as const, text: value }];
+    const recentHistory = historyWithUser.slice(-12);
+
+    setMessages(historyWithUser);
     setInput("");
     setLoading(true);
 
@@ -31,7 +34,7 @@ export function PortfolioAssistant() {
       const response = await fetch("/api/assistant", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: value, locale })
+        body: JSON.stringify({ message: value, locale, history: recentHistory })
       });
 
       const payload = await response.json();
