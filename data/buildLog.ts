@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-07",
     title: {
+      en: "PA voice and access UX refined",
+      de: "PA-Stimme und Zugriffs-UX verbessert"
+    },
+    summary: {
+      en: "Adjusted PA behavior to answer in visitor-facing third-person tone and added a floating bottom-right chatbot icon linking to the assistant page.",
+      de: "PA-Verhalten auf besucherorientierten Dritte-Person-Ton umgestellt und ein schwebendes Chatbot-Icon unten rechts als Link zur Assistant-Seite ergänzt."
+    },
+    tags: ["Assistant", "UX", "Copy"]
+  },
+  {
+    dateISO: "2026-03-07",
+    title: {
       en: "PA reliability hardening for deployment",
       de: "PA-Zuverlässigkeit für Deployment gehärtet"
     },

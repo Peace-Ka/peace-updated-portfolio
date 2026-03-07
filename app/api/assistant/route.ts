@@ -39,7 +39,16 @@ function localFallbackAnswer(query: string, knowledge: ReturnType<typeof retriev
   }
 
   const top = knowledge[0];
-  return `${top.answer}\n\n(Source: ${top.section} - "${top.question}")`;
+  const normalized = top.answer
+    .replace(/\bI am\b/g, "Peace is")
+    .replace(/\bI'm\b/g, "Peace is")
+    .replace(/\bI was\b/g, "Peace was")
+    .replace(/\bI have\b/g, "Peace has")
+    .replace(/\bI\b/g, "Peace")
+    .replace(/\bMy\b/g, "Peace's")
+    .replace(/\bmy\b/g, "Peace's");
+
+  return `${normalized}\n\n(Source: ${top.section} - "${top.question}")`;
 }
 
 function extractResponseText(payload: any): string {
@@ -93,7 +102,11 @@ HARD GUARDRAILS
 - Answer only using the supplied knowledge context.
 - If context is insufficient, say you do not know and ask one short follow-up.
 - Keep answers concise.
-- Respond in ${locale === "de" ? "German" : "English"} unless user asks otherwise.`;
+- Respond in ${locale === "de" ? "German" : "English"} unless user asks otherwise.
+- Treat the user as a visitor asking about Peace, not as Peace.
+- Use third-person perspective about Peace (for example: "Peace is..."), unless the user explicitly says they are Peace.
+- Do not use pet names like "luv" or "hun" in this public portfolio assistant.
+- Keep tone friendly and natural, but professional and clear.`;
 
     const model = process.env.OPENAI_MODEL ?? "gpt-4.1-mini";
 

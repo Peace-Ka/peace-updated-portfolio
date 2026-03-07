@@ -56,6 +56,7 @@
   "assistant": {
     "title": "Personal Assistant",
     "subtitle": "Stelle mir lockere Fragen. Antworten basieren auf meiner persönlichen Wissensdatei.",
+    "fabAria": "Personal Assistant öffnen",
     "modeUnknown": "Modus: wartet",
     "modeOpenAI": "Modus: OpenAI",
     "modeFallback": "Modus: lokaler Fallback",

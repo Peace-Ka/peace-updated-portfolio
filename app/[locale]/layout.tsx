@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { FloatingAssistantButton } from "@/components/floating-assistant-button";
 import { routing } from "@/i18n/routing";
 
 type Props = {
@@ -36,7 +37,10 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div className="min-h-screen">{children}</div>
+      <div className="min-h-screen">
+        {children}
+        <FloatingAssistantButton />
+      </div>
     </NextIntlClientProvider>
   );
 }
