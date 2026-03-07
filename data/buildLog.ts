@@ -20,6 +20,18 @@ export type BuildLogEntry = {
 
 export const buildLogEntries: BuildLogEntry[] = [
   {
+    dateISO: "2026-03-07",
+    title: {
+      en: "PA reliability hardening for deployment",
+      de: "PA-Zuverlässigkeit für Deployment gehärtet"
+    },
+    summary: {
+      en: "Added embedded fallback prompt and knowledge so the assistant still responds if file-based KB loading fails in production.",
+      de: "Eingebetteten Fallback-Prompt und Fallback-Wissen ergänzt, damit der Assistant auch bei fehlgeschlagenem Datei-Load in Produktion antwortet."
+    },
+    tags: ["Assistant", "Reliability", "Fallback"]
+  },
+  {
     dateISO: "2026-03-04",
     title: {
       en: "Personal Assistant (PA) added",

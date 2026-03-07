@@ -14,7 +14,7 @@ export function PortfolioAssistant() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState(false);
-  const [mode, setMode] = useState<"openai" | "fallback" | null>(null);
+  const [mode, setMode] = useState<"openai" | "fallback" | "fallback_embedded" | null>(null);
 
   const submit = async (event: FormEvent) => {
     event.preventDefault();
@@ -58,7 +58,13 @@ export function PortfolioAssistant() {
 
       <div className="mt-5 rounded-xl border border-ink/10 bg-mist p-4">
         <p className="text-xs text-ink/70">
-          {mode === "fallback" ? t("modeFallback") : mode === "openai" ? t("modeOpenAI") : t("modeUnknown")}
+          {mode === "fallback"
+            ? t("modeFallback")
+            : mode === "fallback_embedded"
+              ? t("modeFallbackEmbedded")
+              : mode === "openai"
+                ? t("modeOpenAI")
+                : t("modeUnknown")}
         </p>
         <div className="mt-3 max-h-[360px] space-y-3 overflow-y-auto pr-1">
           {messages.length === 0 ? (

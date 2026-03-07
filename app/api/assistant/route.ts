@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { NextRequest, NextResponse } from "next/server";
+import { defaultPAKBItems, defaultPAPrompt } from "@/data/pa-default";
 import { buildKnowledgeSnippet, flattenKB, retrieveRelevant } from "@/lib/pa";
 
 export const runtime = "nodejs";
@@ -11,16 +12,25 @@ type Payload = {
 };
 
 async function loadKnowledge() {
-  const root = process.cwd();
-  const [promptRaw, kbRaw] = await Promise.all([
-    readFile(join(root, "peace_personality_prompt.txt"), "utf-8"),
-    readFile(join(root, "peace_personal_kb.json"), "utf-8")
-  ]);
+  try {
+    const root = process.cwd();
+    const [promptRaw, kbRaw] = await Promise.all([
+      readFile(join(root, "peace_personality_prompt.txt"), "utf-8"),
+      readFile(join(root, "peace_personal_kb.json"), "utf-8")
+    ]);
 
-  return {
-    promptRaw,
-    kbItems: flattenKB(kbRaw)
-  };
+    return {
+      promptRaw,
+      kbItems: flattenKB(kbRaw),
+      source: "files" as const
+    };
+  } catch {
+    return {
+      promptRaw: defaultPAPrompt,
+      kbItems: defaultPAKBItems,
+      source: "embedded_fallback" as const
+    };
+  }
 }
 
 function localFallbackAnswer(query: string, knowledge: ReturnType<typeof retrieveRelevant>) {
@@ -65,7 +75,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing message." }, { status: 400 });
     }
 
-    const { promptRaw, kbItems } = await loadKnowledge();
+    const { promptRaw, kbItems, source } = await loadKnowledge();
     const relevant = retrieveRelevant(kbItems, message, 6);
     const context = buildKnowledgeSnippet(relevant);
     const apiKey = process.env.OPENAI_API_KEY;
@@ -73,7 +83,7 @@ export async function POST(request: NextRequest) {
     if (!apiKey) {
       return NextResponse.json({
         answer: localFallbackAnswer(message, relevant),
-        mode: "fallback"
+        mode: source === "files" ? "fallback" : "fallback_embedded"
       });
     }
 

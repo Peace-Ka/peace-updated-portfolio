@@ -59,6 +59,7 @@
     "modeUnknown": "Modus: wartet",
     "modeOpenAI": "Modus: OpenAI",
     "modeFallback": "Modus: lokaler Fallback",
+    "modeFallbackEmbedded": "Modus: eingebettetes Fallback-Wissen",
     "empty": "Beispiel: Magst du lieber Sushi oder Birria Tacos?",
     "you": "Du",
     "assistantName": "PA",

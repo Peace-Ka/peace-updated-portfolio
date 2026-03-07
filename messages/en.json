@@ -59,6 +59,7 @@
     "modeUnknown": "Mode: waiting",
     "modeOpenAI": "Mode: OpenAI",
     "modeFallback": "Mode: local fallback",
+    "modeFallbackEmbedded": "Mode: embedded fallback knowledge",
     "empty": "Try asking: Do you prefer sushi or birria tacos?",
     "you": "You",
     "assistantName": "PA",
