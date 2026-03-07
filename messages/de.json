@@ -7,6 +7,7 @@
     "about": "Über mich",
     "projects": "Projekte",
     "buildLog": "Build-Log",
+    "assistant": "PA",
     "contact": "Kontakt",
     "downloadCv": "Lebenslauf herunterladen",
     "openMenu": "Menü öffnen",
@@ -51,6 +52,22 @@
     "subtitle": "Kleine Updates, öffentlich shipped.",
     "showMore": "Mehr anzeigen",
     "showLess": "Weniger anzeigen"
+  },
+  "assistant": {
+    "title": "Personal Assistant",
+    "subtitle": "Stelle mir lockere Fragen. Antworten basieren auf meiner persönlichen Wissensdatei.",
+    "modeUnknown": "Modus: wartet",
+    "modeOpenAI": "Modus: OpenAI",
+    "modeFallback": "Modus: lokaler Fallback",
+    "empty": "Beispiel: Magst du lieber Sushi oder Birria Tacos?",
+    "you": "Du",
+    "assistantName": "PA",
+    "inputLabel": "Deine Frage",
+    "placeholder": "Frage etwas aus meinem Fun-Profil...",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "error": "Es gab einen Fehler.",
+    "privacyNote": "Hinweis: Dieser Assistant basiert auf einer persönlichen Fun-Wissensbasis. Keine sensiblen privaten Daten teilen."
   },
   "experience": {
     "heading": "Erfahrung",

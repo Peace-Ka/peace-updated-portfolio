@@ -22,6 +22,18 @@ export const buildLogEntries: BuildLogEntry[] = [
   {
     dateISO: "2026-03-04",
     title: {
+      en: "Personal Assistant (PA) added",
+      de: "Personal Assistant (PA) ergänzt"
+    },
+    summary: {
+      en: "Added a dedicated PA page and assistant API grounded in personal knowledge files, with OpenAI integration and fallback mode for no-key setups.",
+      de: "Eine eigene PA-Seite und Assistant-API auf Basis persönlicher Wissensdateien ergänzt, inklusive OpenAI-Integration und Fallback-Modus ohne API-Key."
+    },
+    tags: ["Assistant", "RAG", "OpenAI", "EN/DE"]
+  },
+  {
+    dateISO: "2026-03-04",
+    title: {
       en: "Project live URLs and NCDC date range updated",
       de: "Projekt-URLs und NCDC-Zeitraum aktualisiert"
     },

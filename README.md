@@ -110,6 +110,39 @@ proxy.ts
   - Add newest entries at the top
   - Keep summaries short and factual
 
+### Personal Assistant (PA)
+
+- Knowledge files in project root:
+  - `peace_personal_kb.json`
+  - `peace_personality_prompt.txt`
+  - `peace_rag_knowledge.md`
+- Assistant page routes:
+  - `/en/assistant`
+  - `/de/assistant`
+- API route:
+  - `POST /api/assistant`
+- Behavior:
+  - Uses OpenAI if `OPENAI_API_KEY` is set
+  - Falls back to local retrieval answer if key is missing
+
+#### Configure OpenAI
+
+1. Copy `.env.example` to `.env.local`
+2. Set:
+
+```bash
+OPENAI_API_KEY=your_key
+OPENAI_MODEL=gpt-4.1-mini
+```
+
+3. Restart dev server after changing env vars.
+
+#### Billing / tokens
+
+- OpenAI API usage requires billing enabled on your OpenAI platform account.
+- Add a payment method in your OpenAI billing settings.
+- Without billing/credits, API calls can fail; the app will use fallback mode if no key is set.
+
 ### Experience / Leadership / Skills
 
 - `data/experience.ts`

@@ -7,6 +7,7 @@
     "about": "About",
     "projects": "Projects",
     "buildLog": "Build log",
+    "assistant": "PA",
     "contact": "Contact",
     "downloadCv": "Download CV",
     "openMenu": "Open menu",
@@ -51,6 +52,22 @@
     "subtitle": "Small updates, shipped in public.",
     "showMore": "Show more",
     "showLess": "Show less"
+  },
+  "assistant": {
+    "title": "Personal Assistant",
+    "subtitle": "Ask fun questions about me. Answers are grounded in my personal knowledge file.",
+    "modeUnknown": "Mode: waiting",
+    "modeOpenAI": "Mode: OpenAI",
+    "modeFallback": "Mode: local fallback",
+    "empty": "Try asking: Do you prefer sushi or birria tacos?",
+    "you": "You",
+    "assistantName": "PA",
+    "inputLabel": "Your question",
+    "placeholder": "Ask anything from my fun profile...",
+    "send": "Send",
+    "sending": "Sending...",
+    "error": "I hit an error.",
+    "privacyNote": "Note: This assistant is based on a personal fun knowledge base. Avoid sharing sensitive private information."
   },
   "experience": {
     "heading": "Experience",
