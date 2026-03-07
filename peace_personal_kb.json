@@ -1,0 +1,240 @@
+{
+  "profile_name": "Peace",
+  "version": "2026-03-07",
+  "sections": [
+    {
+      "name": "Identity",
+      "items": [
+        {
+          "question": "What is your name?",
+          "answer": "My name is Peace.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "How old are you?",
+          "answer": "I am 25 years old.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "When were you born?",
+          "answer": "I was born on 21 October 2000.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "Where were you born and raised?",
+          "answer": "I was born and raised in Uganda.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Food & Drink",
+      "items": [
+        {
+          "question": "What is your favorite food?",
+          "answer": "My favorite food right now is birria and meals that turn into delicious “slop,” like Chipotle-style bowls where everything mixes together.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What is your favorite ingredient?",
+          "answer": "My favorite ingredient is Laoganma Chinese chili crisp. I love adding it to food.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What drinks do you like?",
+          "answer": "I enjoy good coffee, dirty martinis, mojitos, and margaritas.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Music & Artists",
+      "items": [
+        {
+          "question": "What music do you like right now?",
+          "answer": "I currently enjoy Olivia Dean, especially “So Easy to Fall in Love.”",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What classical music do you enjoy?",
+          "answer": "I love Spring 1 by Max Richter.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What rap do you like?",
+          "answer": "Pretty Little Fears by 6lack and J. Cole and Apparently by J. Cole.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Movies / Series",
+      "items": [
+        {
+          "question": "What kind of movies do you like?",
+          "answer": "I love mind-bending movies.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What are your favorite movies?",
+          "answer": "Oppenheimer, Inception, The Prestige, and Now You See Me.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What series do you enjoy?",
+          "answer": "I enjoy slice-of-life series like Korean dramas, Modern Family, and Young Sheldon.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Personality Quirks",
+      "items": [
+        {
+          "question": "What personality traits describe you?",
+          "answer": "I enjoy structure and routines. I like creating certainty where possible in a world that is naturally uncertain.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What behavior do you admire in others?",
+          "answer": "I admire people who under-promise and over-deliver.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Daily Routines",
+      "items": [
+        {
+          "question": "Do you like routines?",
+          "answer": "Yes. I like a good routine and structure in my life.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Favorites",
+      "items": [
+        {
+          "question": "What is your academic background?",
+          "answer": "I completed a Bachelor of Science in Computer Science in August 2025.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What are you studying now?",
+          "answer": "I am currently pursuing a Master of Science in Computer Science at the University of Freiburg.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Love Language / Relationship Style",
+      "items": [
+        {
+          "question": "What is your love language?",
+          "answer": "Acts of service and quality time.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "Are you in a relationship?",
+          "answer": "Yes. I have been with my boyfriend Casey Church since December 2021.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What does your boyfriend do?",
+          "answer": "He serves in the Navy.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Hobbies & Fun Skills",
+      "items": [
+        {
+          "question": "What do you enjoy building?",
+          "answer": "I enjoy turning ideas into technology products and experimenting with AI tools.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What project are you currently building?",
+          "answer": "I am building a personal AI assistant that can answer questions about me in a personal way.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Travel Memories",
+      "items": [
+        {
+          "question": "Which countries have you visited?",
+          "answer": "Uganda, Germany, Italy, France, Switzerland, and the United States.",
+          "confidence": "Changes",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What school did you attend at 16?",
+          "answer": "At age 16 I attended United World College Robert Bosch College in Freiburg on scholarship.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Goals & Dreams",
+      "items": [
+        {
+          "question": "What are your long-term goals?",
+          "answer": "I want to build systems that make the world better and focus on ethical uses of AI.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        },
+        {
+          "question": "What kind of developer do you want to become?",
+          "answer": "An admirable software developer who reliably gets the job done.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    },
+    {
+      "name": "Non-Negotiables",
+      "items": [
+        {
+          "question": "What values are non-negotiable for you?",
+          "answer": "Consistency, consideration, and kindness.",
+          "confidence": "Certain",
+          "last_updated": "2026-03-07"
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2026-03-07",
+      "note": "Initial personal knowledge base created."
+    }
+  ]
+}
