@@ -140,11 +140,9 @@ KNOWLEDGE CONTEXT
 ${context}`;
 
     const model = process.env.OPENAI_MODEL ?? "gpt-4.1-mini";
-
-    const historyInput = safeHistory.map((turn) => ({
-      role: turn.role,
-      content: [{ type: "input_text", text: turn.text }]
-    }));
+    const transcript = safeHistory
+      .map((turn) => `${turn.role === "user" ? "User" : "Assistant"}: ${turn.text}`)
+      .join("\n");
 
     const response = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",
@@ -157,13 +155,12 @@ ${context}`;
         temperature: 0.6,
         input: [
           { role: "system", content: [{ type: "input_text", text: systemPrompt }] },
-          ...historyInput,
           {
             role: "user",
             content: [
               {
                 type: "input_text",
-                text: message
+                text: `Conversation so far:\n${transcript}\n\nCurrent user message:\n${message}`
               }
             ]
           }
