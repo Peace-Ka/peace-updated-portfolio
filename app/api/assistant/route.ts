@@ -2,7 +2,7 @@
 import { join } from "node:path";
 import { NextRequest, NextResponse } from "next/server";
 import { defaultPAKBItems, defaultPAPrompt } from "@/data/pa-default";
-import { buildKnowledgeSnippet, flattenKB, retrieveRelevant } from "@/lib/pa";
+import { buildKnowledgeSnippet, flattenKB, parseMarkdownQA, retrieveRelevant } from "@/lib/pa";
 
 export const runtime = "nodejs";
 
@@ -24,16 +24,24 @@ async function loadKnowledge() {
 
     const kbFiles = ["peace_personal_kb.json", "peace_profile_questions_1_to_10.json"];
     const kbReads = await Promise.allSettled(kbFiles.map((file) => readFile(join(root, file), "utf-8")));
+    const mdRead = await Promise.allSettled([readFile(join(root, "peace_rag_knowledge.md"), "utf-8")]);
 
     const kbRaws = kbReads
       .filter((result): result is PromiseFulfilledResult<string> => result.status === "fulfilled")
       .map((result) => result.value);
 
-    if (!kbRaws.length) {
+    const mdRaws = mdRead
+      .filter((result): result is PromiseFulfilledResult<string> => result.status === "fulfilled")
+      .map((result) => result.value);
+
+    if (!kbRaws.length && !mdRaws.length) {
       throw new Error("No KB files available");
     }
 
-    const combined = kbRaws.flatMap((raw) => flattenKB(raw));
+    const jsonItems = kbRaws.flatMap((raw) => flattenKB(raw));
+    const mdItems = mdRaws.flatMap((raw) => parseMarkdownQA(raw));
+    const combined = [...jsonItems, ...mdItems];
+
     const deduped = Array.from(
       new Map(combined.map((item) => [`${item.question}::${item.answer}`, item])).values()
     );

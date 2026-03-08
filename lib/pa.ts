@@ -45,7 +45,7 @@ function stringifyAnswer(answer: unknown): string {
 }
 
 export function flattenKB(raw: string): KBItem[] {
-  const parsed = JSON.parse(raw) as PersonalKB;
+  const parsed = JSON.parse(raw.replace(/^\uFEFF/, "")) as PersonalKB;
   const out: KBItem[] = [];
 
   for (const section of parsed.sections ?? []) {
@@ -89,6 +89,66 @@ export function flattenKB(raw: string): KBItem[] {
   }
 
   return out;
+}
+
+export function parseMarkdownQA(raw: string): KBItem[] {
+  const lines = raw.replace(/^\uFEFF/, "").split(/\r?\n/);
+  const items: KBItem[] = [];
+
+  let section = "General";
+  let currentQuestion = "";
+  let currentAnswer = "";
+  let confidence = "Unknown";
+  let lastUpdated = "";
+
+  const flush = () => {
+    if (!currentQuestion || !currentAnswer) {
+      return;
+    }
+    items.push({
+      section,
+      question: currentQuestion,
+      answer: currentAnswer,
+      confidence,
+      lastUpdated
+    });
+  };
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+
+    const sectionMatch = line.match(/^##\s+(.+)$/);
+    if (sectionMatch) {
+      section = sectionMatch[1].trim();
+      continue;
+    }
+
+    const questionMatch = line.match(/^\*\*Q:\*\*\s*(.+)$/);
+    if (questionMatch) {
+      flush();
+      currentQuestion = questionMatch[1].trim();
+      currentAnswer = "";
+      confidence = "Unknown";
+      lastUpdated = "";
+      continue;
+    }
+
+    const answerMatch = line.match(/^\*\*A:\*\*\s*(.+)$/);
+    if (answerMatch) {
+      currentAnswer = answerMatch[1].trim();
+      continue;
+    }
+
+    const metaMatch = line.match(/^_Confidence:_\s*(.+?)\s*\|\s*_Last updated:_\s*(.+)$/i);
+    if (metaMatch) {
+      confidence = metaMatch[1].trim();
+      lastUpdated = metaMatch[2].trim();
+      continue;
+    }
+  }
+
+  flush();
+  return items;
 }
 
 function tokenize(text: string): string[] {
